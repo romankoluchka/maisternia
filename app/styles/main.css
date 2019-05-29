@@ -73,3 +73,16 @@ header, nav, main, footer, section, article, div {
   text-transform: uppercase;
   text-align: center;
 }
+section {
+  padding: 0 20px;
+}
+
+.section_title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.activities_item {
+  margin: 0 0 40px;
+}
