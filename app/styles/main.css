@@ -52,7 +52,6 @@ header, nav, main, footer, section, article, div {
 }
 
 .header {
-  border-bottom: 2px solid #e1472b;
   min-height: 4em;
   background-color: #0d2436;
   display: flex;
@@ -72,4 +71,47 @@ header, nav, main, footer, section, article, div {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+}
+
+nav {
+  padding: 5px 0 5px;
+  background-color: #0d2436;
+  border-bottom: 2px solid #e1472b;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+nav ul li {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  width: 150px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #e1472b;
+border-radius: 23px;
+}
+
+section {
+  padding: 0 20px;
+}
+
+.section_title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.activities_item {
+  margin: 0 0 40px;
 }

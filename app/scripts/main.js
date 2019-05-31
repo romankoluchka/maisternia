@@ -1,2 +1,1 @@
-console.log('\'Allo \'Allo!');
-
+document.write(screen.width + '×' + screen.height + 'px.');
