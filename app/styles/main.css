@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5 {
 }
 
 ul {
-padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
 header, nav, main, footer, section, article, div {
@@ -124,9 +124,8 @@ nav ul li a {
   padding: 1em;
 }
 
-.hamburger_menu svg {
+.hamburger_menu img {
   width: 32px;
-  fill: #e1472b;
 }
 
 section {
@@ -141,4 +140,31 @@ section {
 
 .activities_item {
   margin: 0 0 40px;
+}
+
+/* .social_links a {
+  vertical-align: top;
+} */
+
+.work_schedule div:nth-child(1) {
+  display: flex;
+}
+
+.work_schedule ul:last-of-type {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.dinner {
+  margin: 0;
+}
+
+img {
+  width: 100px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }
