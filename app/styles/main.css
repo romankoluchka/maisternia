@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
-       url('fonts/montserrat-regular-webfont.woff') format('woff');
+  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/montserrat-black-webfont.woff2') format('woff2'),
-       url('fonts/montserrat-black-webfont.woff') format('woff');
+  src: url('../fonts/montserrat-black-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-black-webfont.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
-       url('fonts/montserrat-bold-webfont.woff') format('woff');
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -33,6 +33,7 @@
 body {
   background: #e2eaef;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 20px;
   color: #000;
 }
 
@@ -47,6 +48,10 @@ h1, h2, h3, h4, h5 {
   margin: 0; 
 }
 
+ul {
+  padding: 0 0 0 20px;
+}
+
 header, nav, main, footer, section, article, div {
   box-sizing: border-box;
 }
@@ -54,31 +59,42 @@ header, nav, main, footer, section, article, div {
 .header {
   min-height: 4em;
   background-color: #0d2436;
+  border-bottom: 2px solid #e1472b;
   display: flex;
+
+}
+
+.header.open {
+  border-bottom: none;
 }
 
 .header_inner {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  align-self: center;
+  display: flex;
 }
 
 .header__title {
-  font-size: 2em;
+  font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: .18em;
+  padding-left: 10px;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
+  align-self: center;
 }
 
-nav {
+nav.open {
   padding: 5px 0 5px;
   background-color: #0d2436;
   border-bottom: 2px solid #e1472b;
   display: flex;
   justify-content: center;
+}
+
+nav {
+  display: none;
 }
 
 nav ul {
@@ -93,13 +109,25 @@ nav ul li {
 }
 
 nav ul li a {
-  width: 150px;
   display: block;
+  width: 170px;
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
   color: #fff;
   background-color: #e1472b;
-border-radius: 23px;
+  border-radius: 32px;
+}
+
+.hamburger_menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+.hamburger_menu img {
+  width: 32px;
 }
 
 section {
@@ -114,4 +142,83 @@ section {
 
 .activities_item {
   margin: 0 0 40px;
+}
+
+.work_schedule div:nth-child(1) {
+  display: flex;
+}
+
+.work_schedule ul:last-of-type {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.dinner {
+  display: flex;
+  }
+
+.dinner p {
+padding-left: 10px;
+text-align: center;
+line-height: 1.5;
+}
+
+.activities_icon {
+  width: 100px;
+}
+
+.work_schedule_icon {
+width: 100px;
+}
+
+.contacts_icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 360px) {
+  section {
+    padding:0 30px;
+  }
+
+  .header__title {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    border-bottom: none;
+  }
+
+  .header_inner {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  .hamburger_menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    padding: 5px 0 5px;
+    background-color: #0d2436;
+    border-bottom: 2px solid #e1472b;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  img {
+    width: 100px;
+  }
 }
