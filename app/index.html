@@ -8,9 +8,7 @@
   <title>Maisternia</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body>
@@ -35,7 +33,7 @@
       <h1 class="section_title">Послуги</h1>
       <div class="activities-wrapper">
         <div class="activities_item">
-          <img src="images/Shoes.png" alt="Shoes">
+          <img class="activities_icon" src="images/Shoes.png" alt="Shoes">
           <h2 class="activities_title">Взуття</h2>
           <div>
             <ul>
@@ -53,7 +51,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Suitcase.png" alt="Suitcase">
+          <img class="activities_icon" src="images/Suitcase.png" alt="Suitcase">
           <h2 class="activities_title">Валізи</h2>
           <div>
             <ul>
@@ -65,7 +63,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Key.png" alt="Key">
+          <img class="activities_icon" src="images/Key.png" alt="Key">
           <h2 class="activities_title">Дублікати ключів</h2>
           <div>
             <ul>
@@ -77,7 +75,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Umbrella.png" alt="Umbrella">
+          <img class="activities_icon" src="images/Umbrella.png" alt="Umbrella">
           <h2 class="activities_title">Парасолі</h2>
           <div>
             <ul>
@@ -89,7 +87,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Iron.png" alt="Iron">
+          <img class="activities_icon" src="images/Iron.png" alt="Iron">
           <h2 class="activities_title">Ремонт</h2>
           <div>
             <ul>
@@ -99,7 +97,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Handbag.png" alt="Handbag">
+          <img class="activities_icon" src="images/Handbag.png" alt="Handbag">
 
           <h2 class="activities_title">Сумки</h2>
           <div>
@@ -111,7 +109,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Knife.png" alt="Knife">
+          <img class="activities_icon" src="images/Knife.png" alt="Knife">
           <h2 class="activities_title">Заточування</h2>
           <div>
             <ul>
@@ -121,7 +119,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Glasses.png" alt="Glasses">
+          <img class="activities_icon" src="images/Glasses.png" alt="Glasses">
           <h2 class="activities_title">Окуляри</h2>
           <div>
             <ul>
@@ -131,7 +129,7 @@
           </div>
         </div>
         <div class="activities_item">
-          <img src="images/Clock.png" alt="Clock">
+          <img class="activities_icon" src="images/Clock.png" alt="Clock">
           <h2 class="activities_title">Годинники</h2>
           <div>
             <ul>
@@ -146,15 +144,17 @@
       <h1 class="section_title">Контакти</h1>
       <div class="activities_item">
         <div class="social_links">
-          <p><a href="tel:+380968573076"><img class="icon" src="images/Phone.svg" alt="Phone">(096) 857 3076</a></p>
-          <p><a href="viber://chat?number=380968573076"><img class="icon" src="images/Viber.svg" alt="Viber">Viber</a>
+          <p><a href="tel:+380968573076"><img class="contacts_icon" src="images/Phone.svg" alt="Phone">(096) 857
+              3076</a></p>
+          <p><a href="viber://chat?number=380968573076"><img class="contacts_icon" src="images/Viber.svg"
+                alt="Viber">Viber</a>
           </p>
-          <p><a href="viber://chat?number=380968573076"><img class="icon" src="images/Telegram.svg"
+          <p><a href="viber://chat?number=380968573076"><img class="contacts_icon" src="images/Telegram.svg"
                 alt="Telegram">Telegram</a></p>
         </div>
       </div>
       <div id="work_schedule" class="activities_item">
-        <img src="images/Work_schedule.svg" alt="Work schedule">
+        <img class="work_schedule_icon" src="images/Work_schedule.svg" alt="Work schedule">
         <h2 class="activities_title">Графік роботи</h2>
         <div class="work_schedule">
           <div>
@@ -177,9 +177,9 @@
               <li>Вихідний</li>
             </ul>
           </div>
-          <div>
-            <img src="images/Dinner.svg" alt="Dinner">
-            <p class="dinner">Обідня перерва: 14:00 - 14:30</p>
+          <div class="dinner">
+            <img class="work_schedule_icon" src="images/Dinner.svg" alt="Dinner">
+            <p>Обідня перерва: <br> 14:00 - 14:30</p>
           </div>
         </div>
       </div>
@@ -195,9 +195,11 @@
   </main>
   <footer>
     <div>Copyright &copy; 2019</div>
+    <div>Designed by <a href="tg://resolve?domain=Nazarmlnk">Nazarmlnk</a><br>Created by <a
+        href="tg://resolve?domain=Romankoluchka">Romankoluchka</a></div>
   </footer>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
+  <!-- <script>
     (function (b, o, i, l, e, r) {
       b.GoogleAnalyticsObject = l; b[l] || (b[l] =
         function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
@@ -206,7 +208,7 @@
       r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-  </script>
+  </script> -->
   <!-- build:js scripts/vendor.js -->
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->
