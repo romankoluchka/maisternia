@@ -76,7 +76,7 @@ header, nav, main, footer, section, article, div {
 }
 
 .header__title {
-  font-size: 1.8rem;
+  font-size: 1.5em;
   font-weight: 900;
   letter-spacing: .18em;
   padding-left: 10px;
@@ -116,7 +116,7 @@ nav ul li a {
   text-align: center;
   color: #fff;
   background-color: #e1472b;
-  border-radius: 32px;
+  border-radius: 36px;
 }
 
 .hamburger_menu {
@@ -135,7 +135,7 @@ section {
 }
 
 .section_title {
-  font-size: 2rem;
+  font-size: 1.8em;
   text-align: center;
   margin: 20px 0;
 }
@@ -155,7 +155,7 @@ section {
 
 .dinner {
   display: flex;
-  }
+}
 
 .dinner p {
 padding-left: 10px;
@@ -183,6 +183,7 @@ width: 100px;
   }
 
   .header__title {
+    font-size: 1.7em;
     padding-left: 20px;
   }
 }
