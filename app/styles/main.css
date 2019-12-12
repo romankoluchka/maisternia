@@ -48,16 +48,12 @@ h1, h2, h3, h4, h5 {
   margin: 0; 
 }
 
-ul {
-  padding: 0 0 0 20px;
-}
-
 header, nav, main, footer, section, article, div {
   box-sizing: border-box;
 }
 
 .header {
-  min-height: 4em;
+  height: 4em;
   background-color: #0d2436;
   border-bottom: 2px solid #e1472b;
   display: flex;
@@ -144,6 +140,10 @@ section {
   margin: 0 0 40px;
 }
 
+.work_schedule ul {
+line-height: 1.3em;
+}
+
 .work_schedule div:nth-child(1) {
   display: flex;
 }
@@ -165,6 +165,7 @@ line-height: 1.5;
 
 .activities_icon {
   width: 100px;
+  height: 100px;
 }
 
 .work_schedule_icon {
@@ -175,6 +176,12 @@ width: 100px;
   width: 30px;
   height: 30px;
   padding: 5px;
+}
+
+@media screen and (max-width: 760px) {
+  ul {
+    padding: 0 0 0 20px;
+  }
 }
 
 @media screen and (min-width: 360px) {
@@ -189,8 +196,17 @@ width: 100px;
 }
 
 @media screen and (min-width: 760px) {
+  section {
+    padding-left: 40px;
+  }
+  
   .header {
+    height: 5em;
     border-bottom: none;
+  }
+
+  .header__title {
+    font-size: 2em;
   }
 
   .header_inner {
@@ -204,7 +220,7 @@ width: 100px;
   }
 
   nav {
-    display: block;
+    height: 4em;
     padding: 5px 0 5px;
     background-color: #0d2436;
     border-bottom: 2px solid #e1472b;
@@ -222,4 +238,38 @@ width: 100px;
   img {
     width: 100px;
   }
+
+  .activities_item {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .activities_icon_wrapper {
+    flex: 0 0 150px;
+  }
+
+  .activities_icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .activities_title {
+    margin-left: 20px;  
+  }
+
+  .list_of_activities_wrapper {
+    width: 70vw;
+    max-width: 650px;
+  }
+
+  .list_of_activities {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    padding-left: 0;
+  }
+  
+  .list_of_activities li {
+    margin-left: 40px;
+  }
+
 }
