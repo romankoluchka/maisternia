@@ -140,15 +140,18 @@ section {
   margin: 0 0 40px;
 }
 
-.work_schedule ul {
-line-height: 1.3em;
+#work_schedule {
+  margin: 0 0 40px;
 }
 
-.work_schedule div:nth-child(1) {
+.days {
   display: flex;
+  line-height: 1.3em;
 }
 
-.work_schedule ul:last-of-type {
+
+
+.days ul:last-of-type {
   list-style: none;
   padding-left: 1em;
 }
@@ -179,7 +182,7 @@ width: 100px;
 }
 
 @media screen and (max-width: 760px) {
-  ul {
+  #activities ul {
     padding: 0 0 0 20px;
   }
 }
@@ -272,4 +275,12 @@ width: 100px;
     margin-left: 40px;
   }
 
+  .work_schedule_wrapper {
+    display: flex;
+  }
+
+  .work_schedule_icon {
+    width: 150px;
+    height: 150px;
+  }
 }
