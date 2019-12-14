@@ -48,16 +48,12 @@ h1, h2, h3, h4, h5 {
   margin: 0; 
 }
 
-ul {
-  padding: 0 0 0 20px;
-}
-
 header, nav, main, footer, section, article, div {
   box-sizing: border-box;
 }
 
 .header {
-  min-height: 4em;
+  height: 4em;
   background-color: #0d2436;
   border-bottom: 2px solid #e1472b;
   display: flex;
@@ -76,7 +72,7 @@ header, nav, main, footer, section, article, div {
 }
 
 .header__title {
-  font-size: 1.8rem;
+  font-size: 1.5em;
   font-weight: 900;
   letter-spacing: .18em;
   padding-left: 10px;
@@ -116,7 +112,7 @@ nav ul li a {
   text-align: center;
   color: #fff;
   background-color: #e1472b;
-  border-radius: 32px;
+  border-radius: 36px;
 }
 
 .hamburger_menu {
@@ -135,7 +131,7 @@ section {
 }
 
 .section_title {
-  font-size: 2rem;
+  font-size: 1.8em;
   text-align: center;
   margin: 20px 0;
 }
@@ -144,18 +140,25 @@ section {
   margin: 0 0 40px;
 }
 
-.work_schedule div:nth-child(1) {
-  display: flex;
+#work_schedule {
+  margin: 0 0 40px;
 }
 
-.work_schedule ul:last-of-type {
+.days {
+  display: flex;
+  line-height: 1.3em;
+}
+
+
+
+.days ul:last-of-type {
   list-style: none;
   padding-left: 1em;
 }
 
 .dinner {
   display: flex;
-  }
+}
 
 .dinner p {
 padding-left: 10px;
@@ -165,6 +168,7 @@ line-height: 1.5;
 
 .activities_icon {
   width: 100px;
+  height: 100px;
 }
 
 .work_schedule_icon {
@@ -177,19 +181,35 @@ width: 100px;
   padding: 5px;
 }
 
+@media screen and (max-width: 760px) {
+  #activities ul {
+    padding: 0 0 0 20px;
+  }
+}
+
 @media screen and (min-width: 360px) {
   section {
     padding:0 30px;
   }
 
   .header__title {
+    font-size: 1.7em;
     padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 760px) {
+  section {
+    padding-left: 40px;
+  }
+  
   .header {
+    height: 5em;
     border-bottom: none;
+  }
+
+  .header__title {
+    font-size: 2em;
   }
 
   .header_inner {
@@ -203,7 +223,7 @@ width: 100px;
   }
 
   nav {
-    display: block;
+    height: 4em;
     padding: 5px 0 5px;
     background-color: #0d2436;
     border-bottom: 2px solid #e1472b;
@@ -220,5 +240,47 @@ width: 100px;
 
   img {
     width: 100px;
+  }
+
+  .activities_item {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .activities_icon_wrapper {
+    flex: 0 0 150px;
+  }
+
+  .activities_icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .activities_title {
+    margin-left: 20px;  
+  }
+
+  .list_of_activities_wrapper {
+    width: 70vw;
+    max-width: 650px;
+  }
+
+  .list_of_activities {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    padding-left: 0;
+  }
+  
+  .list_of_activities li {
+    margin-left: 40px;
+  }
+
+  .work_schedule_wrapper {
+    display: flex;
+  }
+
+  .work_schedule_icon {
+    width: 150px;
+    height: 150px;
   }
 }
