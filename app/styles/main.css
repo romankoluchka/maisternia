@@ -275,6 +275,12 @@ width: 100px;
     margin-left: 40px;
   }
 
+  .social_links {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .work_schedule_wrapper {
     display: flex;
   }
@@ -283,4 +289,33 @@ width: 100px;
     width: 150px;
     height: 150px;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 7em;
+  }
+
+  .header__title {
+    font-size: 3em;
+  }
+
+  nav ul {
+    max-width: 1100px;
+  }
+
+  section {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copyright {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
