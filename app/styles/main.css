@@ -4,6 +4,7 @@
        url('../fonts/montserrat-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
        url('../fonts/montserrat-black-webfont.woff') format('woff');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
        url('../fonts/montserrat-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -316,6 +319,7 @@ width: 100px;
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
+    font-size: medium;
   }
 
 }

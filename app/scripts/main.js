@@ -1,5 +1,3 @@
-document.write(screen.width + '×' + screen.height + 'px.');
-
 const menu = document.querySelector('#menu');
 const main = document.querySelector('main');
 const header = document.querySelector('.header')
