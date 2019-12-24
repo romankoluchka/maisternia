@@ -25,7 +25,7 @@ function styles() {
       autoprefixer(),
     ]))
     .pipe($.if(!isProd, $.sourcemaps.write()))
-    .pipe(dest('.tmp/styles'))
+    .pipe(dest('dist/styles'))
     .pipe(server.reload({ stream: true }));
 }
 
@@ -35,7 +35,7 @@ function scripts() {
     .pipe($.if(!isProd, $.sourcemaps.init()))
     .pipe($.babel())
     .pipe($.if(!isProd, $.sourcemaps.write('.')))
-    .pipe(dest('.tmp/scripts'))
+    .pipe(dest('dist/scripts'))
     .pipe(server.reload({ stream: true }));
 }
 
