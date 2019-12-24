@@ -18,9 +18,6 @@ const isProd = process.env.NODE_ENV === 'production';
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = !isProd && !isTest;
 
-const ghPages = require('gulp-gh-pages');
-task('deploy', () => src('./dist/**/*').pipe(ghPages()));
-
 function styles() {
   return src('app/styles/*.css')
     .pipe($.if(!isProd, $.sourcemaps.init()))
@@ -91,8 +88,8 @@ function extras() {
     'app/*',
     '!app/*.html',
   ], {
-      dot: true,
-    }).pipe(dest('dist'));
+    dot: true,
+  }).pipe(dest('dist'));
 }
 
 function clean() {

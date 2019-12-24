@@ -6,7 +6,9 @@
 		"allowfullscreen",
 		"endbuild",
 		"frameborder",
+		"gtag",
 		"pageview",
+		"webapp",
 		"Домофонні"
 	]
 }
